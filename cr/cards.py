@@ -89,7 +89,7 @@ class Cards(BaseGen):
                                     cards.append(card)
                                     logger.info(card)
                                 else:
-                                    logger.warning(f"Duplicate card key: {key}, skipping…")
+                                    logger.warning( 'Duplicate card key: %s, skipping...', key )
             return card_num
 
         for card_config in self.config.cards:
